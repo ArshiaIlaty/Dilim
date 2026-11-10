@@ -1,0 +1,52 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Local / editor
+.DS_Store
+.idea/
+.vscode/
+.cursor/
+.cursorindexingignore
+.specstory/
+.autopilot.json
+
+# Chat/agent scratch
+tmp/
+
+# Hugging Face / model downloads
+.cache/
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Media and generated captions (keep example_output.srt)
+*.mov
+*.mp4
+*.mkv
+*.wav
+*.m4a
+*.mp3
+*.aac
+*.flac
+*.srt
+!example_output.srt
+*.txt
+!requirements.txt
+!README.md
+
+# Secrets
+.env
+.env.*

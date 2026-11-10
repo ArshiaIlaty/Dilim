@@ -1,0 +1,12 @@
+# Use a fresh venv. Anaconda base mixes conda torch with pip transformers and breaks.
+#   python3 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# torch 2.5+ is required: transformers 4.56 imports torch.compiler / dynamo, which
+# fail on the conda torch 2.3.0.post100 build (DiagnosticOptions / AutoProcessor).
+# torchvision is not needed for this audio-only script.
+
+numpy>=1.26,<3
+torch>=2.5.1,<2.8
+transformers>=4.46.3,<4.57
+faster-whisper>=1.1.0,<1.3
